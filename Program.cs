@@ -17,7 +17,15 @@ namespace SentenceSpliter
             Console.WriteLine("Hello {0}!", userName);
             Console.WriteLine("Enter a random sentence to be split:");
             //AskUserForInput
+            Console.WriteLine("Enter a sentence: ");
+            var sentence = Console.ReadLine();
 
+            //Split this string and put into an Array
+            var arrayOfWords = sentence.Split(' ');
+
+            var newSentence = string.Join("", arrayOfWords);
+
+            Console.WriteLine(newSentence.ToUpper());
 
         }
     }
